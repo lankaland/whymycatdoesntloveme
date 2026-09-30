@@ -1,0 +1,15 @@
+[
+  { "label": "You're not dinner, and dinner is in 4 minutes", "weight": 37 },
+  { "label": "She's saving her cuddles for later, don't ask when", "weight": 15 },
+  { "label": "She's just doing the math on when you'll feed her next", "weight": 14 },
+  { "label": "She let the dog live. You're welcome", "weight": 12 },
+  { "label": "You left her with a stranger for two weeks. TWO WEEKS", "weight": 3 },
+  { "label": "She's still mad about that one time in 2024, don't ask which time", "weight": 3 },
+  { "label": "This is her house, you just pay for it", "weight": 3 },
+  { "label": "Ex-street cat, unimpressed by your indoor privileges", "weight": 3 },
+  { "label": "Not enough sunshine today, this is your fault somehow", "weight": 3 },
+  { "label": "The car wasn't a Tesla", "weight": 3 },
+  { "label": "You brought a dog into HER house", "weight": 2 },
+  { "label": "Error 404: love not found", "weight": 1 },
+  { "label": "She actually loves you. This is a glitch", "weight": 1 }
+]

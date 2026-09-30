@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why doesn't my cat love me?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Why doesn't my cat love me?</h1>
+    <p>Spin the wheel and find out.</p>
+
+    <div id="wheel-container">
+      <canvas id="wheel" width="320" height="320"></canvas>
+      <button id="spin-btn">Spin</button>
+    </div>
+
+    <div id="result" hidden>
+      <p id="result-text"></p>
+      <button id="spin-again-btn">Spin again</button>
+    </div>
+
+    <button id="mute-btn" aria-label="Mute music">🔊</button>
+    <audio id="bg-music" loop preload="auto">
+      <source src="music/jingle.m4a" type="audio/mp4">
+    </audio>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -4,28 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Why doesn't my cat love me?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <span class="paws p1">🐾</span>
+  <span class="paws p2">🐾</span>
+  <button id="mute-btn" aria-label="Mute music">🔊</button>
   <main>
-    <h1>Why doesn't my cat love me?</h1>
-    <p>Spin the wheel and find out.</p>
+    <h1>🐱 Why doesn't my cat love me?</h1>
+    <p class="sub">Spin the wheel and find out.</p>
 
-    <div id="wheel-container">
-      <canvas id="wheel" width="320" height="320"></canvas>
-      <button id="spin-btn">Spin</button>
+    <div id="wheel-wrap">
+      <div class="ear left"><div class="ear-inner"></div></div>
+      <div class="ear right"><div class="ear-inner"></div></div>
+      <div id="pointer-wrap">
+        <span class="toe t1"></span><span class="toe t2"></span><span class="toe t3"></span>
+        <div id="pointer"></div>
+      </div>
+      <div id="wheel-rotor">
+        <canvas id="wheel" width="300" height="300"></canvas>
+      </div>
+      <div id="result" hidden>
+        <p id="result-text"></p>
+      </div>
     </div>
 
-    <div id="result" hidden>
-      <p id="result-text"></p>
-      <button id="spin-again-btn">Spin again</button>
-    </div>
-
-    <button id="mute-btn" aria-label="Mute music">🔊</button>
-    <audio id="bg-music" loop preload="auto">
-      <source src="music/jingle.m4a" type="audio/mp4">
-    </audio>
+    <button id="spin-btn">🐾 Spin</button>
   </main>
+
+  <audio id="bg-music" loop preload="auto">
+    <source src="music/jingle.m4a" type="audio/mp4">
+  </audio>
 
   <script src="app.js"></script>
 </body>

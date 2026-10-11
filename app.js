@@ -215,6 +215,15 @@ function initWheel({ canvas, rotor, options, theme, pointerEl, spinBtn, resultBo
   spinBtn.addEventListener('click', spin);
 }
 
+const whyToggle = document.getElementById('why-toggle');
+const whyText = document.getElementById('why-text');
+whyToggle.addEventListener('click', () => {
+  const expanded = whyToggle.getAttribute('aria-expanded') === 'true';
+  whyToggle.setAttribute('aria-expanded', String(!expanded));
+  whyText.hidden = expanded;
+  whyToggle.textContent = expanded ? '🤔 But really, why?' : '🙈 Okay, fine, hide it';
+});
+
 const music = document.getElementById('bg-music');
 const muteBtn = document.getElementById('mute-btn');
 let muted = false;
